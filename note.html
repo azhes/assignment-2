@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="CSS/style.css">
     <title>Note</title>
 </head>
-<body>
+<body class="notebody">
     <nav>
         <ul class="navlist">
             <li id="navitem"><a href="index.html">About</a></li>
             <li id="navitem"><a href="note.html">Docs</a></li>
         </ul>
     </nav>
+    <aside class="sidebar">
+        <button class="slidein"><<</button>
+        <ul class="noteslist">
+            <li id="listitem">my notes</li>
+            <li id="listitem">note one</li>
+            <li id="listitem">note two</li>
+        </ul>
+    </aside>
     <main>
-        <aside>
-            <button class="slidein"><<</button>
-            <ul class="noteslist">
-                <li id="listitem">my notes</li>
-                <li id="listitem">note one</li>
-                <li id="listitem">note two</li>
-            </ul>
-        </aside>
         <section class="notearea">
             <button id="newplus">+</button>
             <p id="textarea">your note here</p>
@@ -31,7 +31,7 @@
                 <li id="delete"><button>delete</button></li>
             </ul>
         </section>
-        <footer>
+        <footer class="notefooter">
             created by or copyright or social media links footer
         </footer>
     </main>
