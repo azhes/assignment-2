@@ -80,12 +80,13 @@ button {
 }
 
 #plus {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-right: 20px;
 }
 
 #createnew {
     padding-top: 1rem;
+    font-size: 1.2rem;
 }
 
 .indexfooter {
@@ -139,7 +140,7 @@ button {
 }
 
 #newplus {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     grid-row: 1;
     grid-column: 1;
 }
