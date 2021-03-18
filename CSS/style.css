@@ -34,8 +34,8 @@ a:visited {
 
 main {
     display: grid;
-    grid-template-rows: 10rem 10rem 10rem 19rem 5rem;
-    grid-template-columns: 5% 20% 20% 20% 10%;
+    grid-template-rows: 10rem 10rem auto;
+    grid-template-columns: 5% 20% auto;
     grid-row-gap: 10px;
     width: 100%;
 }
@@ -55,6 +55,7 @@ button {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 70rem;
 }
 
 .notelist {
@@ -73,8 +74,10 @@ button {
 }
 
 footer {
-    grid-column: 4;
-    grid-row: 5;
+    grid-column: 3;
+    grid-row: 3;
+    margin-left: 20rem;
+    margin-top: 29rem;
 }
 
 aside {
@@ -137,4 +140,47 @@ aside {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
+}
+
+@media (min-width: 360px) and (max-width: 740px) { /*Galaxy S9/S9+ Screen Size*/
+    #createnew {
+        width: 8rem;
+    }
+
+    footer {
+        margin-left: 0rem;
+        margin-top: 17rem;
+        font-size: 0.5rem;
+    }
+
+    aside {
+        height: 35rem;
+        display: grid;
+        grid-template-rows: 5rem 3rem;
+        grid-template-columns: 5rem 1rem;
+        grid-row-gap: 5px;
+        width: 6rem;
+        background-color: #555169;
+    }
+
+    .slidein {
+        font-size: 1rem;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .noteslist {
+        grid-row: 2;
+        grid-column: 1;
+        background-color: #555169;
+        list-style: none;
+    }
+
+    .notearea {
+        display: grid;
+        grid-template-rows: 1rem 15rem 1rem;
+        grid-template-columns: 2rem 12rem 10rem;
+        margin-left: 5rem;
+        margin-top: 5rem;
+    }
 }
