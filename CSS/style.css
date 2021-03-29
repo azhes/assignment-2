@@ -31,7 +31,7 @@
     height: 100vh;
 }
 
-nav {
+.navbar {
     grid-area: h;
     padding: 10px;
     display: flex;
@@ -192,33 +192,56 @@ textarea {
     }
 
     .notebody {
-        grid-template-rows: 5rem 1fr 5rem;
+        grid-template-rows: 3rem 5rem 1fr 5rem;
         grid-template-columns: 100px 100px;
         gap: 1px;
+        grid-template-areas:
+            'n n n'
+            'sb sb sb'
+            'no no no'
+            'f f f';
+    }
+
+    .navbar {
+        grid-area: n;
     }
 
     .sidebar {
-        grid-template-columns: 2rem 1rem;
+        grid-area: sb;
+        grid-template-columns: 5rem;
         grid-row-gap: 1px;
     }
 
-    .slidein {
-        font-size: 1.2rem;
+    .noteslist {
         grid-column: 1;
+        display: flex;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .slidein {
+        visibility: hidden;
     }
 
     .notearea {
+        grid-area: no;
         display: grid;
-        grid-template-rows: 1rem 20rem 1rem;
-        grid-template-columns: 2rem 13rem 10rem;
+        grid-template-rows: 1rem 20rem 1rem 1rem;
+        grid-template-columns: 2rem 18rem 10rem;
         margin-left: 0.25rem;
         margin-top: 1rem;
     }
 
     .notefooter {
-        margin-top: 10rem;
+        grid-area: f;
+        margin-top: 6rem;
         margin-left: 0.25rem;
         width: 20rem;
         font-size: 0.75rem;
+    }
+
+    .savedelete {
+        font-size: 2rem;
+        grid-row: 4;
     }
 }
