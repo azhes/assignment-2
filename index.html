@@ -12,7 +12,7 @@
     <title>Note-ly Home Page</title>
 </head>
 <body class="indexbody">
-    <div>
+    <div class="darklighttoggle">
         <input type="checkbox" class="checkbox" id="checkbox">
         <label class="label" for="checkbox">
             <i class="fas fa-moon"></i>
@@ -20,15 +20,15 @@
             <div class="ball"></div>
         </label>
     </div>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <ul class="navlist">
-            <li id="navitem"><a href="index.html">About</a></li>
-            <li id="navitem"><a href="note.html">Docs</a></li>
+            <li id="navitem"><a id="nav" href="index.html">About</a></li>
+            <li id="navitem"><a  id="nav2" href="note.html">Docs</a></li>
         </ul>
     </nav>
     <main class="indexmain">
-        <button class="slideout">>></button>
-        <button class="newnote">
+        <button id="slideout">>></button>
+        <button id="newnote">
             <ul class= notelist>
                 <li id="plus">+</li>
                 <li id="createnew">create a new note</li>

@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-.indexbody {
+body {
     background-color: #1f1d2e;
     color: #e0def4;
     display: grid;
@@ -97,31 +97,54 @@ body.light {
 
 a:link {
     text-decoration: none;
-    color: #e0def4;
+    color: #56949f;
+}
+
+#nav {
+    transition: transform 0.2s linear;
+}
+
+#nav.light {
+    color: #191724;
+}
+
+#nav2.light {
+    color:#191724;
 }
 
 a:visited {
-    color: #9ccfd8;
+    color: #56949f;
 }
 
 button {
+    background-color: #1f1d2e;
     color: #e0def4;
     border: none;
 }
 
-.slideout {
+#slideout {
     grid-area: so;
     font-size: 1.5rem;
     margin-top: 3rem;
-    background-color: #1f1d2e;
+    transition: background 0.2s linear;
 }
 
-.newnote {
+#slideout.light {
+    background-color: #faf4ed;
+    color: #1f1d2e;
+}
+
+#newnote {
     grid-area: n;
     margin-left: 30rem;
     margin-top: 5rem;
     width: 20rem;
-    background-color: #1f1d2e;
+    transition: background 0.2s linear;
+}
+
+#newnote.light {
+    background-color: #faf4ed;
+    color: #1f1d2e;
 }
 
 .notelist {
