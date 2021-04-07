@@ -6,7 +6,7 @@ const checkbox = document.getElementById('checkbox');
 
 checkbox.addEventListener('change', () => {
     // change theme
-    document.indexbody.classList.toggle('light');
+    document.body.classList.toggle('light');
 })
 
 /* Function to make the new note button create note taking area 
