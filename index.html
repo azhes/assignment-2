@@ -8,12 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Geo&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="CSS/style.css">
     <script defer src="JS/app.js"></script>
+    <script src="https://kit.fontawesome.com/8fb3f98259.js" crossorigin="anonymous"></script>
     <title>Note-ly Home Page</title>
 </head>
 <body class="indexbody">
-    <button class="darkmode">
-        Toggle Dark Mode
-    </button>
+    <div>
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label class="label" for="checkbox">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
     <nav class="navbar">
         <ul class="navlist">
             <li id="navitem"><a href="index.html">About</a></li>
